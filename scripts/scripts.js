@@ -6,6 +6,7 @@ function initializedApp() {
 
 async function displayMeme(){
     try {
+    
     //YOLO
     const response = await
     fetch("https://api.imgflip.com/get_memes");
