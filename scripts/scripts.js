@@ -13,7 +13,7 @@ async function displayMeme(){
     const jsonResponse = await response.json();
     //required
     console.log(jsonResponse);
-    const meme = jsonResponse.data.memes[1];
+    const meme = jsonResponse.data.memes[3];
 
     const image = document.createElement("img");
     image.src = meme.url;
@@ -21,7 +21,7 @@ async function displayMeme(){
     image.width = 200;
 
     const memeContainer =
-    document.querySelector("#meme");
+    document.querySelector("#meme");""
     memeContainer.appendChild(image);
     } catch (error){
         console.log("Promise failed", error);
